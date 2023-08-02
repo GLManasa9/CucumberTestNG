@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TTAF - RegressionTest" parallel="methods" verbose="1" configfailurepolicy="continue"
+       data-provider-thread-count="1">
+
+    <!--    <parameter name="system.info" value="runner.MySystemInfo"/>
+        <parameter name="report.config" value="src/test/resources/config/extent-config.xml"/>-->
+
+    <test name="Regression - Windows Chrome Browser">
+        <!-- If you want to be more specific, replace this with a list of test classes you'd like to run -->
+
+        <classes>
+            <class name="com.runner.TestRunner"/>
+        </classes>
+    </test>
+</suite>
